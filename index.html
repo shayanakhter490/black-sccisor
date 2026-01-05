@@ -1,0 +1,1549 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>BLACK SCCISOR | Premium Men's Salon & Grooming Studio | Shah Faisal Colony, Karachi</title>
+    <meta name="description" content="BLACK SCCISOR: Premium men's salon in Block 3, Shah Faisal Colony 3, Karachi. Expert barbers, hygiene-first approach, modern grooming services for men. Book your appointment today.">
+    <meta name="keywords" content="men's salon, barber, grooming, haircut, beard styling, Karachi, Shah Faisal Colony, BLACK SCISSOR, premium salon, men's grooming">
+    <meta name="author" content="BLACK SCISSOR">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700;800&family=Playfair+Display:wght@700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    <style>
+        /* CSS Variables */
+        :root {
+            /* Color Palette */
+            --primary-black: #0a0a0a;
+            --secondary-black: #1a1a1a;
+            --accent-gold: #d4af37;
+            --light-gold: #f4e4a6;
+            --dark-grey: #2d2d2d;
+            --medium-grey: #3a3a3a;
+            --light-grey: #e5e5e5;
+            --white: #ffffff;
+            
+            /* Typography */
+            --font-heading: 'Playfair Display', serif;
+            --font-body: 'Inter', sans-serif;
+            
+            /* Spacing */
+            --spacing-xs: 0.5rem;
+            --spacing-sm: 1rem;
+            --spacing-md: 2rem;
+            --spacing-lg: 3rem;
+            --spacing-xl: 5rem;
+            
+            /* Border Radius */
+            --radius-sm: 4px;
+            --radius-md: 8px;
+            --radius-lg: 12px;
+            
+            /* Shadows */
+            --shadow-sm: 0 2px 8px rgba(0, 0, 0, 0.2);
+            --shadow-md: 0 4px 16px rgba(0, 0, 0, 0.3);
+            --shadow-lg: 0 8px 32px rgba(0, 0, 0, 0.4);
+            
+            /* Transitions */
+            --transition-fast: 0.2s ease;
+            --transition-medium: 0.3s ease;
+            --transition-slow: 0.5s ease;
+        }
+
+        /* Reset & Base Styles */
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+
+        html {
+            scroll-behavior: smooth;
+            font-size: 16px;
+        }
+
+        body {
+            font-family: var(--font-body);
+            color: var(--light-grey);
+            background-color: var(--primary-black);
+            line-height: 1.6;
+            overflow-x: hidden;
+        }
+
+        h1, h2, h3, h4, h5 {
+            font-family: var(--font-heading);
+            font-weight: 700;
+            line-height: 1.2;
+            margin-bottom: var(--spacing-md);
+            color: var(--white);
+        }
+
+        h1 {
+            font-size: 3.5rem;
+            letter-spacing: -0.5px;
+        }
+
+        h2 {
+            font-size: 2.5rem;
+            position: relative;
+            display: inline-block;
+        }
+
+        h2:after {
+            content: '';
+            position: absolute;
+            bottom: -10px;
+            left: 0;
+            width: 60px;
+            height: 3px;
+            background-color: var(--accent-gold);
+        }
+
+        h3 {
+            font-size: 1.8rem;
+        }
+
+        p {
+            margin-bottom: var(--spacing-sm);
+            font-size: 1.05rem;
+        }
+
+        a {
+            text-decoration: none;
+            color: inherit;
+            transition: color var(--transition-fast);
+        }
+
+        ul {
+            list-style: none;
+        }
+
+        img {
+            max-width: 100%;
+            height: auto;
+            display: block;
+        }
+
+        section {
+            padding: var(--spacing-xl) 0;
+        }
+
+        .container {
+            width: 100%;
+            max-width: 1200px;
+            margin: 0 auto;
+            padding: 0 var(--spacing-md);
+        }
+
+        /* Buttons */
+        .btn {
+            display: inline-flex;
+            align-items: center;
+            justify-content: center;
+            gap: 10px;
+            padding: 14px 28px;
+            border-radius: var(--radius-sm);
+            font-weight: 600;
+            text-transform: uppercase;
+            letter-spacing: 0.5px;
+            transition: all var(--transition-medium);
+            cursor: pointer;
+            border: 2px solid transparent;
+            font-size: 0.95rem;
+        }
+
+        .btn-primary {
+            background-color: var(--accent-gold);
+            color: var(--primary-black);
+        }
+
+        .btn-primary:hover {
+            background-color: var(--light-gold);
+            transform: translateY(-3px);
+            box-shadow: var(--shadow-md);
+        }
+
+        .btn-secondary {
+            background-color: transparent;
+            color: var(--white);
+            border-color: var(--accent-gold);
+        }
+
+        .btn-secondary:hover {
+            background-color: rgba(212, 175, 55, 0.1);
+            transform: translateY(-3px);
+            box-shadow: var(--shadow-md);
+        }
+
+        .btn-whatsapp {
+            background-color: #25D366;
+            color: white;
+        }
+
+        .btn-whatsapp:hover {
+            background-color: #128C7E;
+            transform: translateY(-3px);
+        }
+
+        .btn-call {
+            background-color: var(--medium-grey);
+            color: white;
+        }
+
+        .btn-call:hover {
+            background-color: var(--dark-grey);
+            transform: translateY(-3px);
+        }
+
+        /* Header & Navigation */
+        .header {
+            position: fixed;
+            top: 0;
+            left: 0;
+            width: 100%;
+            z-index: 1000;
+            background-color: rgba(10, 10, 10, 0.95);
+            backdrop-filter: blur(10px);
+            border-bottom: 1px solid rgba(212, 175, 55, 0.1);
+            transition: all var(--transition-medium);
+        }
+
+        .header.scrolled {
+            padding: 5px 0;
+            box-shadow: var(--shadow-md);
+        }
+
+        .nav-container {
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            padding: 1.5rem var(--spacing-md);
+        }
+
+        .logo {
+            display: flex;
+            align-items: center;
+            gap: 10px;
+            font-family: var(--font-heading);
+            font-weight: 700;
+            font-size: 1.8rem;
+            color: var(--white);
+        }
+
+        .logo-icon {
+            color: var(--accent-gold);
+            font-size: 2rem;
+        }
+
+        .logo-text {
+            display: flex;
+            flex-direction: column;
+            line-height: 1.1;
+        }
+
+        .logo-text span:first-child {
+            font-size: 1.8rem;
+            color: var(--white);
+        }
+
+        .logo-text span:last-child {
+            font-size: 0.8rem;
+            color: var(--accent-gold);
+            letter-spacing: 2px;
+            text-transform: uppercase;
+        }
+
+        .nav-toggle {
+            display: none;
+            background: none;
+            border: none;
+            color: var(--white);
+            font-size: 1.5rem;
+            cursor: pointer;
+            z-index: 1001;
+        }
+
+        .nav-menu {
+            display: flex;
+            gap: var(--spacing-lg);
+        }
+
+        .nav-link {
+            color: var(--light-grey);
+            font-weight: 500;
+            position: relative;
+            padding: 5px 0;
+        }
+
+        .nav-link:hover {
+            color: var(--accent-gold);
+        }
+
+        .nav-link:after {
+            content: '';
+            position: absolute;
+            bottom: 0;
+            left: 0;
+            width: 0;
+            height: 2px;
+            background-color: var(--accent-gold);
+            transition: width var(--transition-medium);
+        }
+
+        .nav-link:hover:after {
+            width: 100%;
+        }
+
+        /* Hero Section */
+        .hero {
+            min-height: 100vh;
+            display: flex;
+            align-items: center;
+            background: linear-gradient(rgba(10, 10, 10, 0.9), rgba(10, 10, 10, 0.8)), url('https://images.unsplash.com/photo-1585747860715-2ba37e788b70?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=1200&q=80');
+            background-size: cover;
+            background-position: center;
+            background-attachment: fixed;
+            padding-top: 100px;
+        }
+
+        .hero-content {
+            max-width: 800px;
+            text-align: center;
+            margin: 0 auto;
+        }
+
+        .hero h1 {
+            margin-bottom: var(--spacing-md);
+            line-height: 1.1;
+        }
+
+        .hero h1 span {
+            color: var(--accent-gold);
+        }
+
+        .hero-subtitle {
+            font-size: 1.2rem;
+            color: var(--light-grey);
+            margin-bottom: var(--spacing-lg);
+            max-width: 600px;
+            margin-left: auto;
+            margin-right: auto;
+        }
+
+        .hero-buttons {
+            display: flex;
+            gap: var(--spacing-md);
+            justify-content: center;
+            flex-wrap: wrap;
+            margin-top: var(--spacing-xl);
+        }
+
+        .hero-info {
+            display: flex;
+            justify-content: center;
+            gap: var(--spacing-xl);
+            margin-top: var(--spacing-xl);
+            flex-wrap: wrap;
+        }
+
+        .info-item {
+            text-align: center;
+        }
+
+        .info-item i {
+            font-size: 2rem;
+            color: var(--accent-gold);
+            margin-bottom: var(--spacing-sm);
+        }
+
+        /* About Section */
+        .about {
+            background-color: var(--secondary-black);
+        }
+
+        .about-content {
+            display: grid;
+            grid-template-columns: 1fr 1fr;
+            gap: var(--spacing-xl);
+            align-items: center;
+        }
+
+        .about-image {
+            border-radius: var(--radius-md);
+            overflow: hidden;
+            box-shadow: var(--shadow-lg);
+        }
+
+        .about-text h2 {
+            margin-bottom: var(--spacing-lg);
+        }
+
+        .about-features {
+            display: grid;
+            grid-template-columns: 1fr 1fr;
+            gap: var(--spacing-md);
+            margin-top: var(--spacing-lg);
+        }
+
+        .feature {
+            display: flex;
+            align-items: flex-start;
+            gap: var(--spacing-sm);
+        }
+
+        .feature i {
+            color: var(--accent-gold);
+            font-size: 1.2rem;
+            margin-top: 5px;
+        }
+
+        /* Services Section */
+        .services {
+            background-color: var(--primary-black);
+        }
+
+        .section-header {
+            text-align: center;
+            margin-bottom: var(--spacing-xl);
+        }
+
+        .section-header h2 {
+            margin-left: auto;
+            margin-right: auto;
+        }
+
+        .section-subtitle {
+            color: var(--light-grey);
+            font-size: 1.1rem;
+            max-width: 600px;
+            margin: var(--spacing-md) auto 0;
+        }
+
+        .services-grid {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+            gap: var(--spacing-lg);
+        }
+
+        .service-card {
+            background-color: var(--secondary-black);
+            border-radius: var(--radius-md);
+            padding: var(--spacing-lg);
+            transition: transform var(--transition-medium), box-shadow var(--transition-medium);
+            border: 1px solid rgba(212, 175, 55, 0.1);
+        }
+
+        .service-card:hover {
+            transform: translateY(-10px);
+            box-shadow: var(--shadow-lg);
+            border-color: rgba(212, 175, 55, 0.3);
+        }
+
+        .service-icon {
+            width: 70px;
+            height: 70px;
+            background-color: rgba(212, 175, 55, 0.1);
+            border-radius: 50%;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            margin-bottom: var(--spacing-md);
+        }
+
+        .service-icon i {
+            font-size: 1.8rem;
+            color: var(--accent-gold);
+        }
+
+        .service-card h3 {
+            margin-bottom: var(--spacing-sm);
+            font-size: 1.5rem;
+        }
+
+        .service-card p {
+            color: #b0b0b0;
+            font-size: 0.95rem;
+        }
+
+        /* Why Choose Us */
+        .why-us {
+            background-color: var(--secondary-black);
+        }
+
+        .why-grid {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+            gap: var(--spacing-lg);
+        }
+
+        .why-card {
+            text-align: center;
+            padding: var(--spacing-lg);
+            background-color: rgba(212, 175, 55, 0.05);
+            border-radius: var(--radius-md);
+            border: 1px solid rgba(212, 175, 55, 0.1);
+        }
+
+        .why-card i {
+            font-size: 2.5rem;
+            color: var(--accent-gold);
+            margin-bottom: var(--spacing-md);
+        }
+
+        .why-card h3 {
+            margin-bottom: var(--spacing-sm);
+        }
+
+        /* Reviews Section */
+        .reviews {
+            background-color: var(--primary-black);
+        }
+
+        .reviews-slider {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+            gap: var(--spacing-lg);
+        }
+
+        .review-card {
+            background-color: var(--secondary-black);
+            border-radius: var(--radius-md);
+            padding: var(--spacing-lg);
+            border: 1px solid rgba(212, 175, 55, 0.1);
+        }
+
+        .review-header {
+            display: flex;
+            align-items: center;
+            gap: var(--spacing-md);
+            margin-bottom: var(--spacing-md);
+        }
+
+        .review-avatar {
+            width: 60px;
+            height: 60px;
+            border-radius: 50%;
+            background-color: var(--dark-grey);
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            color: var(--accent-gold);
+            font-size: 1.5rem;
+        }
+
+        .review-info h4 {
+            margin-bottom: 5px;
+        }
+
+        .review-rating {
+            color: var(--accent-gold);
+            margin-top: 5px;
+        }
+
+        .review-text {
+            font-style: italic;
+            color: #b0b0b0;
+            position: relative;
+            padding-left: var(--spacing-md);
+        }
+
+        .review-text:before {
+            content: '"';
+            position: absolute;
+            left: 0;
+            top: -10px;
+            font-size: 3rem;
+            color: var(--accent-gold);
+            opacity: 0.3;
+        }
+
+        /* Location Section */
+        .location {
+            background-color: var(--secondary-black);
+        }
+
+        .location-content {
+            display: grid;
+            grid-template-columns: 1fr 1fr;
+            gap: var(--spacing-xl);
+            align-items: center;
+        }
+
+        .location-info h3 {
+            margin-bottom: var(--spacing-lg);
+            color: var(--accent-gold);
+        }
+
+        .address-details {
+            margin-bottom: var(--spacing-lg);
+        }
+
+        .address-item {
+            display: flex;
+            align-items: flex-start;
+            gap: var(--spacing-sm);
+            margin-bottom: var(--spacing-md);
+        }
+
+        .address-item i {
+            color: var(--accent-gold);
+            margin-top: 5px;
+        }
+
+        .map-container {
+            border-radius: var(--radius-md);
+            overflow: hidden;
+            box-shadow: var(--shadow-lg);
+            height: 400px;
+        }
+
+        .map-placeholder {
+            width: 100%;
+            height: 100%;
+            background-color: var(--dark-grey);
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            justify-content: center;
+            color: var(--light-grey);
+        }
+
+        .map-placeholder i {
+            font-size: 3rem;
+            color: var(--accent-gold);
+            margin-bottom: var(--spacing-md);
+        }
+
+        /* Contact Section */
+        .contact {
+            background-color: var(--primary-black);
+        }
+
+        .contact-content {
+            display: grid;
+            grid-template-columns: 1fr 1fr;
+            gap: var(--spacing-xl);
+            align-items: center;
+        }
+
+        .contact-info h2 {
+            margin-bottom: var(--spacing-md);
+        }
+
+        .contact-methods {
+            display: flex;
+            flex-direction: column;
+            gap: var(--spacing-md);
+            margin-top: var(--spacing-lg);
+        }
+
+        .contact-method {
+            display: flex;
+            align-items: center;
+            gap: var(--spacing-md);
+        }
+
+        .contact-icon {
+            width: 60px;
+            height: 60px;
+            border-radius: 50%;
+            background-color: rgba(212, 175, 55, 0.1);
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            color: var(--accent-gold);
+            font-size: 1.5rem;
+        }
+
+        .contact-details h4 {
+            margin-bottom: 5px;
+        }
+
+        .contact-form {
+            background-color: var(--secondary-black);
+            padding: var(--spacing-lg);
+            border-radius: var(--radius-md);
+            box-shadow: var(--shadow-lg);
+        }
+
+        .form-group {
+            margin-bottom: var(--spacing-md);
+        }
+
+        .form-group label {
+            display: block;
+            margin-bottom: 8px;
+            color: var(--light-grey);
+            font-weight: 500;
+        }
+
+        .form-control {
+            width: 100%;
+            padding: 14px;
+            background-color: var(--dark-grey);
+            border: 1px solid rgba(212, 175, 55, 0.2);
+            border-radius: var(--radius-sm);
+            color: var(--white);
+            font-family: var(--font-body);
+            font-size: 1rem;
+            transition: border-color var(--transition-fast);
+        }
+
+        .form-control:focus {
+            outline: none;
+            border-color: var(--accent-gold);
+        }
+
+        /* Footer */
+        .footer {
+            background-color: var(--secondary-black);
+            padding: var(--spacing-xl) 0 var(--spacing-md);
+            border-top: 1px solid rgba(212, 175, 55, 0.1);
+        }
+
+        .footer-content {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+            gap: var(--spacing-xl);
+            margin-bottom: var(--spacing-xl);
+        }
+
+        .footer-logo .logo {
+            margin-bottom: var(--spacing-md);
+        }
+
+        .footer-logo p {
+            color: #b0b0b0;
+            max-width: 300px;
+        }
+
+        .footer-links h4,
+        .footer-hours h4 {
+            color: var(--white);
+            margin-bottom: var(--spacing-md);
+            font-size: 1.2rem;
+        }
+
+        .footer-links ul {
+            display: flex;
+            flex-direction: column;
+            gap: 10px;
+        }
+
+        .footer-links a {
+            color: #b0b0b0;
+            transition: color var(--transition-fast);
+        }
+
+        .footer-links a:hover {
+            color: var(--accent-gold);
+        }
+
+        .footer-hours p {
+            color: #b0b0b0;
+            margin-bottom: 8px;
+        }
+
+        .social-links {
+            display: flex;
+            gap: var(--spacing-md);
+            margin-top: var(--spacing-md);
+        }
+
+        .social-links a {
+            width: 40px;
+            height: 40px;
+            border-radius: 50%;
+            background-color: var(--dark-grey);
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            color: var(--white);
+            transition: all var(--transition-fast);
+        }
+
+        .social-links a:hover {
+            background-color: var(--accent-gold);
+            color: var(--primary-black);
+            transform: translateY(-3px);
+        }
+
+        .footer-bottom {
+            text-align: center;
+            padding-top: var(--spacing-md);
+            border-top: 1px solid rgba(255, 255, 255, 0.05);
+            color: #b0b0b0;
+            font-size: 0.9rem;
+        }
+
+        .seo-text {
+            font-size: 0.8rem;
+            color: #777;
+            max-width: 600px;
+            margin: var(--spacing-md) auto;
+        }
+
+        /* Responsive Design */
+        @media (max-width: 992px) {
+            h1 {
+                font-size: 2.8rem;
+            }
+            
+            h2 {
+                font-size: 2.2rem;
+            }
+            
+            .about-content,
+            .location-content,
+            .contact-content {
+                grid-template-columns: 1fr;
+                gap: var(--spacing-lg);
+            }
+            
+            .about-features {
+                grid-template-columns: 1fr;
+            }
+        }
+
+        @media (max-width: 768px) {
+            .nav-toggle {
+                display: block;
+            }
+            
+            .nav-menu {
+                position: fixed;
+                top: 0;
+                right: -100%;
+                flex-direction: column;
+                background-color: var(--primary-black);
+                width: 80%;
+                height: 100vh;
+                padding: 100px 40px 40px;
+                transition: right var(--transition-medium);
+                z-index: 999;
+                border-left: 1px solid rgba(212, 175, 55, 0.1);
+            }
+            
+            .nav-menu.active {
+                right: 0;
+            }
+            
+            .hero-buttons {
+                flex-direction: column;
+                align-items: center;
+            }
+            
+            .hero-buttons .btn {
+                width: 100%;
+                max-width: 300px;
+            }
+            
+            .hero-info {
+                flex-direction: column;
+                gap: var(--spacing-lg);
+            }
+            
+            .services-grid {
+                grid-template-columns: 1fr;
+            }
+            
+            .why-grid {
+                grid-template-columns: 1fr;
+            }
+            
+            .reviews-slider {
+                grid-template-columns: 1fr;
+            }
+        }
+
+        @media (max-width: 576px) {
+            h1 {
+                font-size: 2.2rem;
+            }
+            
+            h2 {
+                font-size: 1.8rem;
+            }
+            
+            section {
+                padding: var(--spacing-lg) 0;
+            }
+            
+            .hero {
+                background-attachment: scroll;
+            }
+        }
+    </style>
+</head>
+<body>
+    <!-- Header & Navigation -->
+    <header class="header" id="header">
+        <div class="container">
+            <nav class="nav-container">
+                <a href="#" class="logo">
+                    <div class="logo-icon">
+                        <i class="fas fa-scissors"></i>
+                    </div>
+                    <div class="logo-text">
+                        <span>BLACK SCISSOR</span>
+                        <span>Men's Grooming Studio</span>
+                    </div>
+                </a>
+                
+                <button class="nav-toggle" id="navToggle" aria-label="Toggle navigation">
+                    <i class="fas fa-bars"></i>
+                </button>
+                
+                <ul class="nav-menu" id="navMenu">
+                    <li><a href="#home" class="nav-link">Home</a></li>
+                    <li><a href="#about" class="nav-link">About</a></li>
+                    <li><a href="#services" class="nav-link">Services</a></li>
+                    <li><a href="#why-us" class="nav-link">Why Us</a></li>
+                    <li><a href="#reviews" class="nav-link">Reviews</a></li>
+                    <li><a href="#location" class="nav-link">Location</a></li>
+                    <li><a href="#contact" class="nav-link">Contact</a></li>
+                </ul>
+            </nav>
+        </div>
+    </header>
+
+    <!-- Hero Section -->
+    <section class="hero" id="home">
+        <div class="container">
+            <div class="hero-content">
+                <h1>Style That <span>Defines You</span></h1>
+                <p class="hero-subtitle">Premium Men's Grooming Experience at BLACK SCISSOR. Expert barbers, precision cuts, and a luxurious environment designed for the modern man.</p>
+                
+                <div class="hero-buttons">
+                    <a href="#contact" class="btn btn-primary">
+                        <i class="fas fa-calendar-check"></i> Book Appointment
+                    </a>
+                    <a href="tel:+923001234567" class="btn btn-secondary">
+                        <i class="fas fa-phone"></i> Call Now
+                    </a>
+                </div>
+                
+                <div class="hero-info">
+                    <div class="info-item">
+                        <i class="fas fa-clock"></i>
+                        <h4>12:00 PM – 11:00 PM</h4>
+                        <p>Daily</p>
+                    </div>
+                    <div class="info-item">
+                        <i class="fas fa-map-marker-alt"></i>
+                        <h4>Shah Faisal Colony</h4>
+                        <p>Block 3, Karachi</p>
+                    </div>
+                    <div class="info-item">
+                        <i class="fas fa-star"></i>
+                        <h4>Expert Barbers</h4>
+                        <p>Premium Tools</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- About Section -->
+    <section class="about" id="about">
+        <div class="container">
+            <div class="about-content">
+                <div class="about-image">
+                    <img src="https://images.unsplash.com/photo-1599351431202-1e0f0137899a?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=800&q=80" alt="BLACK SCISSOR barber at work" loading="lazy">
+                </div>
+                
+                <div class="about-text">
+                    <h2>About BLACK SCISSOR</h2>
+                    <p>Established with a vision to redefine men's grooming, BLACK SCISSOR brings luxury, precision, and style to the heart of Karachi. Our studio is more than just a barbershop—it's a sanctuary for modern men who value quality and attention to detail.</p>
+                    <p>Our expert barbers are trained in both classic and contemporary techniques, ensuring every client leaves looking sharp and confident. We prioritize hygiene and use only premium tools and products.</p>
+                    
+                    <div class="about-features">
+                        <div class="feature">
+                            <i class="fas fa-check-circle"></i>
+                            <div>
+                                <h4>Expert Barbers</h4>
+                                <p>Highly trained professionals</p>
+                            </div>
+                        </div>
+                        <div class="feature">
+                            <i class="fas fa-check-circle"></i>
+                            <div>
+                                <h4>Premium Tools</h4>
+                                <p>High-quality equipment</p>
+                            </div>
+                        </div>
+                        <div class="feature">
+                            <i class="fas fa-check-circle"></i>
+                            <div>
+                                <h4>Hygiene First</h4>
+                                <p>Sanitized environment</p>
+                            </div>
+                        </div>
+                        <div class="feature">
+                            <i class="fas fa-check-circle"></i>
+                            <div>
+                                <h4>Modern Styles</h4>
+                                <p>Latest trends & classics</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Services Section -->
+    <section class="services" id="services">
+        <div class="container">
+            <div class="section-header">
+                <h2>Our Services</h2>
+                <p class="section-subtitle">Premium grooming services tailored for the modern man. From classic cuts to contemporary styles, we've got you covered.</p>
+            </div>
+            
+            <div class="services-grid">
+                <div class="service-card">
+                    <div class="service-icon">
+                        <i class="fas fa-cut"></i>
+                    </div>
+                    <h3>Classic Haircut</h3>
+                    <p>Professional haircut with precision styling, including consultation, shampoo, cut, and finishing.</p>
+                </div>
+                
+                <div class="service-card">
+                    <div class="service-icon">
+                        <i class="fas fa-user-tie"></i>
+                    </div>
+                    <h3>Beard Trim & Shape</h3>
+                    <p>Expert beard trimming, shaping, and grooming to maintain your signature look.</p>
+                </div>
+                
+                <div class="service-card">
+                    <div class="service-icon">
+                        <i class="fas fa-spa"></i>
+                    </div>
+                    <h3>Facial & Skin Care</h3>
+                    <p>Revitalizing facial treatments to cleanse, exfoliate, and nourish your skin.</p>
+                </div>
+                
+                <div class="service-card">
+                    <div class="service-icon">
+                        <i class="fas fa-air-freshener"></i>
+                    </div>
+                    <h3>Hair Spa</h3>
+                    <p>Deep conditioning treatment to repair damaged hair and restore natural shine.</p>
+                </div>
+                
+                <div class="service-card">
+                    <div class="service-icon">
+                        <i class="fas fa-hand-sparkles"></i>
+                    </div>
+                    <h3>Head Massage</h3>
+                    <p>Therapeutic head massage to relieve stress, improve circulation, and promote relaxation.</p>
+                </div>
+                
+                <div class="service-card">
+                    <div class="service-icon">
+                        <i class="fas fa-crown"></i>
+                    </div>
+                    <h3>Grooming Packages</h3>
+                    <p>Complete grooming experience combining haircut, beard styling, facial, and massage.</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Why Choose Us -->
+    <section class="why-us" id="why-us">
+        <div class="container">
+            <div class="section-header">
+                <h2>Why Choose Us</h2>
+                <p class="section-subtitle">Discover what makes BLACK SCISSOR the preferred choice for men's grooming in Karachi.</p>
+            </div>
+            
+            <div class="why-grid">
+                <div class="why-card">
+                    <i class="fas fa-user-check"></i>
+                    <h3>Experienced Barbers</h3>
+                    <p>Our barbers have years of experience and stay updated with the latest trends and techniques.</p>
+                </div>
+                
+                <div class="why-card">
+                    <i class="fas fa-tags"></i>
+                    <h3>Affordable Pricing</h3>
+                    <p>Premium services at competitive prices. We believe luxury grooming should be accessible.</p>
+                </div>
+                
+                <div class="why-card">
+                    <i class="fas fa-hand-sparkles"></i>
+                    <h3>Clean & Hygienic</h3>
+                    <p>We maintain the highest standards of cleanliness. All tools are sanitized after every use.</p>
+                </div>
+                
+                <div class="why-card">
+                    <i class="fas fa-cut"></i>
+                    <h3>Trendy & Classic Styles</h3>
+                    <p>From traditional cuts to modern styles, we master both to suit your personal preference.</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Reviews Section -->
+    <section class="reviews" id="reviews">
+        <div class="container">
+            <div class="section-header">
+                <h2>Customer Reviews</h2>
+                <p class="section-subtitle">What our clients say about their experience at BLACK SCISSOR.</p>
+            </div>
+            
+            <div class="reviews-slider">
+                <div class="review-card">
+                    <div class="review-header">
+                        <div class="review-avatar">
+                            <i class="fas fa-user"></i>
+                        </div>
+                        <div class="review-info">
+                            <h4>Ahmed Khan</h4>
+                            <p>Regular Client</p>
+                            <div class="review-rating">
+                                <i class="fas fa-star"></i>
+                                <i class="fas fa-star"></i>
+                                <i class="fas fa-star"></i>
+                                <i class="fas fa-star"></i>
+                                <i class="fas fa-star"></i>
+                            </div>
+                        </div>
+                    </div>
+                    <p class="review-text">Best men's salon in Shah Faisal Colony! The barbers are true professionals. My haircut and beard trim are always perfect. Highly recommended!</p>
+                </div>
+                
+                <div class="review-card">
+                    <div class="review-header">
+                        <div class="review-avatar">
+                            <i class="fas fa-user"></i>
+                        </div>
+                        <div class="review-info">
+                            <h4>Bilal Ahmed</h4>
+                            <p>Business Professional</p>
+                            <div class="review-rating">
+                                <i class="fas fa-star"></i>
+                                <i class="fas fa-star"></i>
+                                <i class="fas fa-star"></i>
+                                <i class="fas fa-star"></i>
+                                <i class="fas fa-star-half-alt"></i>
+                            </div>
+                        </div>
+                    </div>
+                    <p class="review-text">As a working professional, I need to look sharp. BLACK SCISSOR never disappoints. Their attention to detail is exceptional. The head massage is therapeutic!</p>
+                </div>
+                
+                <div class="review-card">
+                    <div class="review-header">
+                        <div class="review-avatar">
+                            <i class="fas fa-user"></i>
+                        </div>
+                        <div class="review-info">
+                            <h4>Usman Shah</h4>
+                            <p>Student</p>
+                            <div class="review-rating">
+                                <i class="fas fa-star"></i>
+                                <i class="fas fa-star"></i>
+                                <i class="fas fa-star"></i>
+                                <i class="fas fa-star"></i>
+                                <i class="fas fa-star"></i>
+                            </div>
+                        </div>
+                    </div>
+                    <p class="review-text">Affordable prices with premium quality. The environment is clean, and the barbers are friendly. My go-to salon for all grooming needs.</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Location Section -->
+    <section class="location" id="location">
+        <div class="container">
+            <div class="location-content">
+                <div class="location-info">
+                    <h3>Visit Our Studio</h3>
+                    
+                    <div class="address-details">
+                        <div class="address-item">
+                            <i class="fas fa-map-marker-alt"></i>
+                            <div>
+                                <h4>Address</h4>
+                                <p>Block 3, Shah Faisal Colony 3<br>
+                                Shah Faisal Colony, Karachi, 75230</p>
+                            </div>
+                        </div>
+                        
+                        <div class="address-item">
+                            <i class="fas fa-clock"></i>
+                            <div>
+                                <h4>Opening Hours</h4>
+                                <p>Daily: 12:00 PM – 11:00 PM</p>
+                            </div>
+                        </div>
+                        
+                        <div class="address-item">
+                            <i class="fas fa-phone"></i>
+                            <div>
+                                <h4>Contact</h4>
+                                <p>+92 300 1234567</p>
+                                <p>+92 321 9876543 (WhatsApp)</p>
+                            </div>
+                        </div>
+                    </div>
+                    
+                    <a href="https://www.google.com/maps/dir//Block+3+Shah+Faisal+Colony+3+Shah+Faisal+Colony,+Karachi,+75230" target="_blank" class="btn btn-primary">
+                        <i class="fas fa-directions"></i> Get Directions
+                    </a>
+                </div>
+                
+                <div class="map-container">
+                    <div class="map-placeholder" id="mapPlaceholder">
+                        <i class="fas fa-map-marked-alt"></i>
+                        <p>Google Maps Location</p>
+                        <p>Block 3, Shah Faisal Colony 3</p>
+                        <a href="https://www.google.com/maps/dir//Block+3+Shah+Faisal+Colony+3+Shah+Faisal+Colony,+Karachi,+75230" target="_blank" class="btn btn-secondary" style="margin-top: 20px;">
+                            Open in Maps
+                        </a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Contact Section -->
+    <section class="contact" id="contact">
+        <div class="container">
+            <div class="contact-content">
+                <div class="contact-info">
+                    <h2>Book Your Appointment</h2>
+                    <p>Ready for a premium grooming experience? Contact us to schedule your appointment or walk in during business hours.</p>
+                    
+                    <div class="contact-methods">
+                        <div class="contact-method">
+                            <div class="contact-icon">
+                                <i class="fas fa-phone"></i>
+                            </div>
+                            <div class="contact-details">
+                                <h4>Call Us</h4>
+                                <a href="tel:+923001234567">+92 300 1234567</a>
+                                <p>Available during business hours</p>
+                            </div>
+                        </div>
+                        
+                        <div class="contact-method">
+                            <div class="contact-icon">
+                                <i class="fab fa-whatsapp"></i>
+                            </div>
+                            <div class="contact-details">
+                                <h4>WhatsApp</h4>
+                                <a href="https://wa.me/923219876543" target="_blank">+92 321 9876543</a>
+                                <p>Quick responses for appointments</p>
+                            </div>
+                        </div>
+                        
+                        <div class="contact-method">
+                            <div class="contact-icon">
+                                <i class="fas fa-clock"></i>
+                            </div>
+                            <div class="contact-details">
+                                <h4>Walk-In Hours</h4>
+                                <p>12:00 PM – 11:00 PM</p>
+                                <p>No appointment needed</p>
+                            </div>
+                        </div>
+                    </div>
+                    
+                    <div class="hero-buttons" style="margin-top: 30px; justify-content: flex-start;">
+                        <a href="tel:+923001234567" class="btn btn-call">
+                            <i class="fas fa-phone"></i> Call Now
+                        </a>
+                        <a href="https://wa.me/923219876543" target="_blank" class="btn btn-whatsapp">
+                            <i class="fab fa-whatsapp"></i> WhatsApp
+                        </a>
+                    </div>
+                </div>
+                
+                <div class="contact-form">
+                    <h3>Quick Appointment Form</h3>
+                    <p>Fill out this form and we'll get back to you shortly.</p>
+                    
+                    <form id="appointmentForm">
+                        <div class="form-group">
+                            <label for="name">Full Name</label>
+                            <input type="text" id="name" class="form-control" placeholder="Your Name" required>
+                        </div>
+                        
+                        <div class="form-group">
+                            <label for="phone">Phone Number</label>
+                            <input type="tel" id="phone" class="form-control" placeholder="03XX-XXXXXXX" required>
+                        </div>
+                        
+                        <div class="form-group">
+                            <label for="service">Service Required</label>
+                            <select id="service" class="form-control" required>
+                                <option value="">Select a service</option>
+                                <option value="haircut">Classic Haircut</option>
+                                <option value="beard">Beard Trim & Shape</option>
+                                <option value="facial">Facial & Skin Care</option>
+                                <option value="spa">Hair Spa</option>
+                                <option value="massage">Head Massage</option>
+                                <option value="package">Grooming Package</option>
+                            </select>
+                        </div>
+                        
+                        <div class="form-group">
+                            <label for="date">Preferred Date</label>
+                            <input type="date" id="date" class="form-control" required>
+                        </div>
+                        
+                        <button type="submit" class="btn btn-primary" style="width: 100%;">
+                            <i class="fas fa-paper-plane"></i> Request Appointment
+                        </button>
+                    </form>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="footer">
+        <div class="container">
+            <div class="footer-content">
+                <div class="footer-logo">
+                    <a href="#" class="logo">
+                        <div class="logo-icon">
+                            <i class="fas fa-scissors"></i>
+                        </div>
+                        <div class="logo-text">
+                            <span>BLACK SCISSOR</span>
+                            <span>Men's Grooming Studio</span>
+                        </div>
+                    </a>
+                    <p>Premium men's salon offering expert grooming services in Shah Faisal Colony, Karachi. Style that defines you.</p>
+                    
+                    <div class="social-links">
+                        <a href="#" aria-label="Facebook">
+                            <i class="fab fa-facebook-f"></i>
+                        </a>
+                        <a href="#" aria-label="Instagram">
+                            <i class="fab fa-instagram"></i>
+                        </a>
+                        <a href="https://wa.me/923219876543" target="_blank" aria-label="WhatsApp">
+                            <i class="fab fa-whatsapp"></i>
+                        </a>
+                    </div>
+                </div>
+                
+                <div class="footer-links">
+                    <h4>Quick Links</h4>
+                    <ul>
+                        <li><a href="#home">Home</a></li>
+                        <li><a href="#services">Services</a></li>
+                        <li><a href="#why-us">Why Choose Us</a></li>
+                        <li><a href="#reviews">Reviews</a></li>
+                        <li><a href="#location">Location</a></li>
+                        <li><a href="#contact">Contact</a></li>
+                    </ul>
+                </div>
+                
+                <div class="footer-hours">
+                    <h4>Opening Hours</h4>
+                    <p><strong>Monday - Sunday:</strong></p>
+                    <p>12:00 PM – 11:00 PM</p>
+                    <p style="margin-top: 15px;"><strong>Last Appointment:</strong> 10:30 PM</p>
+                </div>
+                
+                <div class="footer-contact">
+                    <h4>Contact Info</h4>
+                    <p><i class="fas fa-map-marker-alt"></i> Block 3, Shah Faisal Colony 3, Karachi</p>
+                    <p><i class="fas fa-phone"></i> +92 300 1234567</p>
+                    <p><i class="fab fa-whatsapp"></i> +92 321 9876543</p>
+                </div>
+            </div>
+            
+            <div class="footer-bottom">
+                <p>&copy; <span id="currentYear"></span> BLACK SCISSOR Men's Salon & Grooming Studio. All rights reserved.</p>
+                <p class="seo-text">Premium men's salon in Block 3, Shah Faisal Colony 3, Karachi. Best barber shop for haircut, beard styling, facial, hair spa, and grooming services for men.</p>
+            </div>
+        </div>
+    </footer>
+
+    <script>
+        // DOM Content Loaded
+        document.addEventListener('DOMContentLoaded', function() {
+            // Set current year in footer
+            document.getElementById('currentYear').textContent = new Date().getFullYear();
+            
+            // Mobile Navigation Toggle
+            const navToggle = document.getElementById('navToggle');
+            const navMenu = document.getElementById('navMenu');
+            
+            navToggle.addEventListener('click', function() {
+                navMenu.classList.toggle('active');
+                this.setAttribute('aria-expanded', navMenu.classList.contains('active'));
+            });
+            
+            // Close mobile menu when clicking on a link
+            const navLinks = document.querySelectorAll('.nav-link');
+            navLinks.forEach(link => {
+                link.addEventListener('click', function() {
+                    navMenu.classList.remove('active');
+                    navToggle.setAttribute('aria-expanded', 'false');
+                });
+            });
+            
+            // Header scroll effect
+            const header = document.getElementById('header');
+            window.addEventListener('scroll', function() {
+                if (window.scrollY > 50) {
+                    header.classList.add('scrolled');
+                } else {
+                    header.classList.remove('scrolled');
+                }
+            });
+            
+            // Appointment form submission
+            const appointmentForm = document.getElementById('appointmentForm');
+            if (appointmentForm) {
+                appointmentForm.addEventListener('submit', function(e) {
+                    e.preventDefault();
+                    
+                    // Get form values
+                    const name = document.getElementById('name').value;
+                    const phone = document.getElementById('phone').value;
+                    const service = document.getElementById('service').value;
+                    const date = document.getElementById('date').value;
+                    
+                    // Create WhatsApp message
+                    const serviceNames = {
+                        'haircut': 'Classic Haircut',
+                        'beard': 'Beard Trim & Shape',
+                        'facial': 'Facial & Skin Care',
+                        'spa': 'Hair Spa',
+                        'massage': 'Head Massage',
+                        'package': 'Grooming Package'
+                    };
+                    
+                    const message = `New Appointment Request:%0A%0AName: ${name}%0APhone: ${phone}%0AService: ${serviceNames[service] || service}%0APreferred Date: ${date}%0A%0AFrom BLACK SCISSOR Website`;
+                    
+                    // Open WhatsApp with pre-filled message
+                    window.open(`https://wa.me/923219876543?text=${message}`, '_blank');
+                    
+                    // Reset form
+                    appointmentForm.reset();
+                    
+                    // Show confirmation
+                    alert('Thank you! Opening WhatsApp to confirm your appointment.');
+                });
+            }
+            
+            // Set minimum date for appointment form to today
+            const dateInput = document.getElementById('date');
+            if (dateInput) {
+                const today = new Date().toISOString().split('T')[0];
+                dateInput.setAttribute('min', today);
+            }
+            
+            // Add active class to nav links based on scroll position
+            function highlightNavOnScroll() {
+                const sections = document.querySelectorAll('section');
+                const navLinks = document.querySelectorAll('.nav-link');
+                
+                let currentSection = '';
+                
+                sections.forEach(section => {
+                    const sectionTop = section.offsetTop;
+                    const sectionHeight = section.clientHeight;
+                    const headerHeight = header.offsetHeight;
+                    
+                    if (window.scrollY >= (sectionTop - headerHeight - 100)) {
+                        currentSection = section.getAttribute('id');
+                    }
+                });
+                
+                navLinks.forEach(link => {
+                    link.classList.remove('active');
+                    if (link.getAttribute('href') === `#${currentSection}`) {
+                        link.classList.add('active');
+                    }
+                });
+            }
+            
+            // Run on scroll
+            window.addEventListener('scroll', highlightNavOnScroll);
+            
+            // Initialize with hero section active
+            highlightNavOnScroll();
+            
+            // Add animation to service cards on scroll
+            const observerOptions = {
+                threshold: 0.1,
+                rootMargin: '0px 0px -50px 0px'
+            };
+            
+            const observer = new IntersectionObserver(function(entries) {
+                entries.forEach(entry => {
+                    if (entry.isIntersecting) {
+                        entry.target.style.opacity = '1';
+                        entry.target.style.transform = 'translateY(0)';
+                    }
+                });
+            }, observerOptions);
+            
+            // Observe service cards for animation
+            const serviceCards = document.querySelectorAll('.service-card');
+            serviceCards.forEach(card => {
+                card.style.opacity = '0';
+                card.style.transform = 'translateY(20px)';
+                card.style.transition = 'opacity 0.5s ease, transform 0.5s ease';
+                observer.observe(card);
+            });
+            
+            // Add click handler for WhatsApp buttons
+            const whatsappButtons = document.querySelectorAll('.btn-whatsapp');
+            whatsappButtons.forEach(button => {
+                if (!button.hasAttribute('href')) {
+                    button.addEventListener('click', function() {
+                        window.open('https://wa.me/923219876543', '_blank');
+                    });
+                }
+            });
+            
+            // Add smooth scroll for anchor links
+            document.querySelectorAll('a[href^="#"]').forEach(anchor => {
+                anchor.addEventListener('click', function(e) {
+                    e.preventDefault();
+                    
+                    const targetId = this.getAttribute('href');
+                    if (targetId === '#') return;
+                    
+                    const targetElement = document.querySelector(targetId);
+                    if (targetElement) {
+                        // Calculate header height for offset
+                        const headerHeight = header.offsetHeight;
+                        const targetPosition = targetElement.offsetTop - headerHeight;
+                        
+                        window.scrollTo({
+                            top: targetPosition,
+                            behavior: 'smooth'
+                        });
+                    }
+                });
+            });
+            
+            // Map placeholder interaction
+            const mapPlaceholder = document.getElementById('mapPlaceholder');
+            if (mapPlaceholder) {
+                mapPlaceholder.addEventListener('click', function() {
+                    window.open('https://www.google.com/maps/dir//Block+3+Shah+Faisal+Colony+3+Shah+Faisal+Colony,+Karachi,+75230', '_blank');
+                });
+            }
+        });
+    </script>
+</body>
+</html>
